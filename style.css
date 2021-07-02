@@ -73,11 +73,21 @@ form input {
   margin-bottom: 0;
 }
 
+form input:active,
+form input:focus {
+  outline: transparent;
+}
+
 form button {
   color: white;
   background-color: var(--primaryBlue);
   border: none;
   font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: hsl(223, 88%, 68%);
 }
 
 img.dashboard {
@@ -104,7 +114,7 @@ img.dashboard {
 
 /* Utility classes */
 .error input {
-  border-color: var(--secondaryLightRed);
+  border: solid 0.05rem var(--secondaryLightRed);
 }
 
 .error p {
@@ -124,15 +134,24 @@ img.dashboard {
 }
 
 @media (min-width: 700px) {
+  .content {
+    width: 40rem;
+    margin: auto;
+  }
+
+  .content h3 {
+    font-size: 3rem;
+  }
   form {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+
   form button {
-    /* height: 4rem; */
-    /* display: none; */
-    /* display: inline; */
-    width: 100%;
     height: 3rem;
+  }
+
+  img.dashboard {
+    width: fit-content;
   }
 }
