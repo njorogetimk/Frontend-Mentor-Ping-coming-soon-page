@@ -11,19 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | Ping coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+
     <script
       src="https://kit.fontawesome.com/db94844786.js"
       crossorigin="anonymous"
@@ -33,12 +26,14 @@
     <div class="container">
       <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
       <div class="content">
-        <h3>We are launching soon!</h3>
+        <h3>We are launching <span>soon!</span></h3>
         <p>Subscribe and get notified</p>
         <div class="form">
           <form>
-            <input type="email" />
-            <p>Please provide a valid email address</p>
+            <div>
+              <input type="email" placeholder="Your email address..." />
+              <p>Please provide a valid email address</p>
+            </div>
             <button type="submit">Notify Me</button>
           </form>
         </div>
@@ -49,13 +44,13 @@
         />
       </div>
     </div>
+    <div class="social">
+      <i class="fab fa-facebook-f icon"></i>
+      <i class="fab fa-twitter icon"></i>
+      <i class="fab fa-instagram icon"></i>
+    </div>
     <div class="copy">
-      <div class="social">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
-      &copy; Copyright Ping. All rights reserved.
+      <p>&copy; Copyright Ping. All rights reserved.</p>
     </div>
 
     <footer>

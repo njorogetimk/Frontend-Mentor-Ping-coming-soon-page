@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --primaryBlue: hsl(223, 87%, 63%);
+  --secondaryPaleBlue: hsl(223, 100%, 88%);
+  --secondaryLightRed: hsl(354, 100%, 66%);
+  --neutralGray: hsl(0, 0%, 59%);
+  --neutralVeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+/* Reset  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+  margin: 3rem 1rem;
+}
+
+.logo img {
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h3 {
+  color: var(--neutralGray);
+  font-weight: unset;
+  margin-bottom: 1rem;
+}
+
+.content h3 span {
+  color: var(--neutralVeryDarkBlue);
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+form {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+form p {
+  margin: 0;
+  display: inline-block;
+  visibility: hidden;
+}
+
+form input,
+form button {
+  width: 90%;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+}
+
+form input {
+  border: solid 0.05rem var(--neutralGray);
+  margin-bottom: 0;
+}
+
+form button {
+  color: white;
+  background-color: var(--primaryBlue);
+  border: none;
+  font-weight: bold;
+}
+
+img.dashboard {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.social {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.social .icon {
+  margin: 0 1rem;
+  /* padding: 0 0.4rem; */
+  color: var(--primaryBlue);
+}
+
+.copy {
+  text-align: center;
+  color: var(--neutralGray);
+  font-size: 0.9rem;
+}
+
+/* Utility classes */
+.error input {
+  border-color: var(--secondaryLightRed);
+}
+
+.error p {
+  visibility: visible;
+  color: var(--secondaryLightRed);
+  margin-bottom: 1rem;
+}
+
+/* Attribution */
+.attribution {
+  margin-top: 3rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  form button {
+    /* height: 4rem; */
+    /* display: none; */
+    /* display: inline; */
+    width: 100%;
+    height: 3rem;
+  }
+}
